@@ -20,7 +20,7 @@ export const SocketContextProvider = ({ children }) => {
     if (newUser) {
       if (socket == null) {
         // console.log("socket is intializing");
-        const newSocket = io("http://localhost:8080", {
+        const newSocket = io("https://chit-chat-2-0-1.onrender.com", {
           query: {
             userId: newUser._id,
             userName: newUser.fullName,
