@@ -1,0 +1,32 @@
+@mixin nunito-font($weight: normal) {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  //   background-image: linear-gradient(to right, #0acffe 0%, #e1e2eb 100%);
+  // background-color: aqua;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-color: aquamarine;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(to bottom, #1da1f2 50%, white 50%);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(2, 0, 36, 1) 0%,
+  //   rgba(88, 9, 121, 0.7982842795321253) 0%,
+  //   rgba(0, 212, 255, 1) 100%
+  // );
+}

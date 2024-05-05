@@ -1,0 +1,98 @@
+@import "colors.scss";
+
+div.container {
+  // height: 200px;
+  width: 400px;
+  // height: 65%;
+  background-color: white;
+  color: $primaryColor;
+  // border: 1px solid green;
+  opacity: 20;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  > h1 {
+    color: $primaryColor;
+    margin: 0.7rem;
+  }
+  > h4 {
+    color: $primaryColor;
+    margin-bottom: 0.9rem;
+  }
+  > form {
+    // padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    > input {
+      padding: 0.6rem;
+      width: 60%;
+      font-weight: 600;
+      margin: 0.6rem;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .radio-container {
+      display: flex;
+      margin: 0.7rem;
+      > div {
+        margin: 0.2rem;
+        display: flex;
+        align-items: center;
+        > label {
+          font-weight: 600;
+        }
+      }
+    }
+    > button {
+      padding: 0.6rem;
+      // width: rem;
+      font-size: 1rem;
+      font-weight: 700;
+      background-color: $primaryColor;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      margin: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    }
+  }
+  > .link {
+    color: rgb(114, 113, 113);
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    width: 300px;
+    padding: 1rem;
+    // height: 70%;
+
+    > h1 {
+      margin: 0.2rem;
+      font-size: 1.4rem;
+    }
+    > form {
+      > input {
+        width: 80%;
+        margin: 0.5rem 0.7rem;
+      }
+      > button {
+        margin: 0.6rem;
+      }
+    }
+  }
+}

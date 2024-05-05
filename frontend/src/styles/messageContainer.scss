@@ -1,0 +1,157 @@
+@import "colors.scss";
+
+.container-header {
+  // margin: 5px;
+  // width: 100%;
+  height: 3.8rem;
+  background-color: $primaryColor;
+  display: flex;
+  align-items: center;
+
+  padding: 0.4rem 0.7rem;
+  // border-radius: 10px 10px 0 0;
+  // margin: 0.2rem;
+
+  > .avatar {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    background-color: aliceblue;
+    > img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+  }
+}
+
+.messages {
+  // background-color: rgb(207, 228, 207);
+  padding: 0.6rem;
+  width: 100%;
+  height: 78%;
+  // flex: 1;
+  position: relative;
+  overflow: auto;
+}
+
+.messages::-webkit-scrollbar {
+  // border-radius: 50%;
+  display: none;
+}
+
+.chat-bubble-sender {
+  // border: 1px solid black;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: flex-end;
+  > .name {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.6rem;
+    margin: 0.7rem;
+    max-width: 50%;
+    word-wrap: break-all;
+    white-space: pre-wrap;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  > div > img {
+    border: 1px solid black;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: red;
+    // flex-shrink: 0;
+    //   > img {
+    //     width: 100%;
+    //     object-fit: contain;
+    //   }
+    // }
+  }
+}
+
+.chat-bubble-reciever {
+  // border: 1px solid black;
+  width: 100%;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: flex-end;
+  // position: absolute;
+  // left: 0;
+  flex-direction: row-reverse;
+  > .name {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.6rem;
+    margin: 0.7rem;
+    max-width: 50%;
+    word-wrap: break-all;
+    white-space: pre-wrap;
+    background-color: #1da1f2;
+    color: $secondaryColor;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    // border: 1px solid gray;
+  }
+  > div > img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: red;
+    flex-shrink: 0;
+    // > img {
+    //   width: 100%;
+    //   object-fit: contain;
+    // }
+  }
+}
+
+.sendMessage {
+  // margin: 1rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  // background-color: aqua;
+  > .form-container {
+    width: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    > form {
+      display: flex;
+      width: 100%;
+      position: relative;
+      align-items: center;
+      > input {
+        width: 100%;
+        flex: 1;
+        padding: 0.7rem;
+        margin-right: 1rem;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      > button {
+        background-color: white;
+        border: none;
+        position: absolute;
+        right: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    > form {
+    }
+  }
+}

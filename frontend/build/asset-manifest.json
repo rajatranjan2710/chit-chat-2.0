@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4d499d24.css",
+    "main.js": "/static/js/main.43e8e0fe.js",
+    "static/media/gojo1.png": "/static/media/gojo1.aa621f62b4c7433c86b6.png",
+    "index.html": "/index.html",
+    "main.4d499d24.css.map": "/static/css/main.4d499d24.css.map",
+    "main.43e8e0fe.js.map": "/static/js/main.43e8e0fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d499d24.css",
+    "static/js/main.43e8e0fe.js"
+  ]
+}
