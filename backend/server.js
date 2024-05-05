@@ -16,7 +16,8 @@ import database from "./database/database.js";
 // dotenv configuration
 config("./.env");
 
-// const __dirname = path.resolve();
+//directory name
+const __dirname = path.resolve();
 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
@@ -34,15 +35,7 @@ app.use(
   })
 );
 app.use(cookieParser());
-
-app.use(
-  cors({
-    origin: process.env.FRONT_END_URL,
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true, // You may need this if your frontend sends credentials (e.g., cookies)
-  })
-);
+app.use(cors());
 
 //importing routes
 import AuthRouter from "./routes/auth.route.js";
@@ -53,15 +46,15 @@ app.use("/api/v1", messageRouter);
 app.use("/api/v1", AuthRouter);
 app.use("/api/v1", userRouter);
 
-app.get("/", (req, res) => {
-  res.send("Working!!!");
-});
-
-// app.use(express.static(path.join(__dirname, "/frontend/build")));
-// //for any other route
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "frontend", "build", "index.html"));
+// app.get("/", (req, res) => {
+//   res.send("Working!!!");
 // });
+
+app.use(express.static(path.join(__dirname, "/frontend/build")));
+//for any other route
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "build", "index.html"));
+});
 
 // test route
 

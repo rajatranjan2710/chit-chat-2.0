@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d499d24.css",
-    "main.js": "/static/js/main.43e8e0fe.js",
+    "main.css": "/static/css/main.7277dcf3.css",
+    "main.js": "/static/js/main.585bd054.js",
     "static/media/gojo1.png": "/static/media/gojo1.aa621f62b4c7433c86b6.png",
+    "static/media/chat3d.png": "/static/media/chat3d.42ec427a2e8ab8ad488b.png",
     "index.html": "/index.html",
-    "main.4d499d24.css.map": "/static/css/main.4d499d24.css.map",
-    "main.43e8e0fe.js.map": "/static/js/main.43e8e0fe.js.map"
+    "main.7277dcf3.css.map": "/static/css/main.7277dcf3.css.map",
+    "main.585bd054.js.map": "/static/js/main.585bd054.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d499d24.css",
-    "static/js/main.43e8e0fe.js"
+    "static/css/main.7277dcf3.css",
+    "static/js/main.585bd054.js"
   ]
 }
